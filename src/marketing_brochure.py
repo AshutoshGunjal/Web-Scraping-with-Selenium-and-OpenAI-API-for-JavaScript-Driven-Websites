@@ -148,6 +148,6 @@ def create_brochure(company_name, url):
         ],
     )
     result = response.choices[0].message['content']
-    display[Markdown(result)]
+    display(Markdown(result))
 
-    print(create_brochure("Anthropic", "https://anthropic.com"))
+print(create_brochure("Anthropic", "https://anthropic.com"))
